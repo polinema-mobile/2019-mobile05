@@ -28,5 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void handlerClickPraktikumFragment(View view) {
+        Intent intent = new Intent(this, Tugas.class);
+        startActivity(intent);
     }
 }
