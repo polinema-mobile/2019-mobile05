@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PraktikumActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="299dp"
+        android:layout_height="237dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="121dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/haspusup" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="42dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fav_icon" />
+
+    <ImageButton
+        android:id="@+id/btn_pushup"
+        android:layout_width="75dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:onClick="handlerClickPushup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.008"
+        app:srcCompat="@drawable/pushups" />
+
+    <ImageButton
+        android:id="@+id/btn_dips"
+        android:layout_width="74dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:onClick="handlerClickDips"
+        app:layout_constraintStart_toEndOf="@+id/btn_pushup"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/dips" />
+
+    <ImageButton
+        android:id="@+id/btn_handstand"
+        android:layout_width="83dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:onClick="handlerClickHandstand"
+        app:layout_constraintStart_toEndOf="@+id/btn_dips"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/handstand" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragment_placeHolder"
+        android:layout_width="412dp"
+        android:layout_height="265dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="REQUIREMENTS"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_placeHolder" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
